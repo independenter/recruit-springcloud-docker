@@ -1,5 +1,5 @@
 server:
-  port: 8001
+  port: 8010
   servlet:
     context-path: /
 
@@ -7,6 +7,7 @@ eureka:
   instance:
     hostname: localhost
   client:
+    name: EUREKA-CLIENT
     #register-with-eureka: false  #不要向注册中心注册自己
     #fetch-registry: false  #禁止检索服务
     serviceUrl.defaultZone: http://${eureka.instance.hostname}:8000/eureka/
@@ -16,4 +17,4 @@ logging:
 
 spring:
   application:
-    name: eureka-client
+    name: service-ribbon
