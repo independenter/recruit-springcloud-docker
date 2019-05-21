@@ -4,16 +4,20 @@ server:
 #    context-path: /
 
 eureka:
+  environment: dev
   instance:
-    hostname: localhost
+    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
   client:
     register-with-eureka: false  #不要向注册中心注册自己
     fetch-registry: false  #禁止检索服务
+    registryFetchIntervalSeconds: 5
     #service-url: http://${eureka.instance.hostname}:${server.port}/eureka/
     serviceUrl.defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
   server:
-    enable-self-preservation: false
+    enable-self-preservation: false  #自我保护
     eviction-interval-timer-in-ms: 10000
+    UseReadOnlyResponseCache: false
+
 
 logging:
   path: classpath:logback.xml

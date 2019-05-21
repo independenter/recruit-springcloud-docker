@@ -3,10 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="1ba2fe87-5bcb-41be-aa29-df06662e7d69" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/enreka-client/src/main/resources/application-dev.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/enreka-client/src/main/resources/application-dev.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eureka/src/main/resources/application-dev.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka/src/main/resources/application-dev.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serice-feign/src/main/java/com/springcloud/sericefeign/SericeFeignApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/serice-feign/src/main/java/com/springcloud/sericefeign/SericeFeignApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serice-feign/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/serice-feign/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-ribbon/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/service-ribbon/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-ribbon/src/main/java/com/springcloud/serviceribbon/HelloService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-ribbon/src/main/java/com/springcloud/serviceribbon/HelloService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-ribbon/src/main/java/com/springcloud/serviceribbon/ServiceRibbonApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-ribbon/src/main/java/com/springcloud/serviceribbon/ServiceRibbonApplication.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -24,34 +25,31 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/serice-feign/src/main/java/com/springcloud/sericefeign/SericeFeignApplication.java">
+        <entry file="file://$PROJECT_DIR$/serice-feign/src/main/java/com/springcloud/sericefeign/SchedualServiceHi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+            <state relative-caret-position="160">
+              <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/serice-feign/src/main/java/com/springcloud/sericefeign/SchedualServiceHi.java">
+        <entry file="file://$PROJECT_DIR$/serice-feign/src/main/java/com/springcloud/sericefeign/SchedualServiceHiHystric.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" column="29" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="160">
+              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/serice-feign/src/main/java/com/springcloud/sericefeign/HiController.java">
+        <entry file="file://$PROJECT_DIR$/serice-feign/src/main/resources/application-dev.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="152">
+              <caret line="21" column="9" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -69,6 +67,7 @@
     <findStrings>
       <find>8888</find>
       <find>1.11</find>
+      <find>http://${eureka.instance.hostname}:8000/eureka/,</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -99,21 +98,22 @@
         <option value="$PROJECT_DIR$/enreka-client/pom.xml" />
         <option value="$PROJECT_DIR$/enreka-client/src/main/resources/logback.xml" />
         <option value="$PROJECT_DIR$/enreka-client/src/main/java/com/springcloud/enrekaclient/EnrekaClientApplication.java" />
-        <option value="$PROJECT_DIR$/service-ribbon/pom.xml" />
-        <option value="$PROJECT_DIR$/service-ribbon/src/main/java/com/springcloud/serviceribbon/ServiceRibbonApplication.java" />
-        <option value="$PROJECT_DIR$/enreka-client/src/main/resources/application-dev.yaml" />
         <option value="$PROJECT_DIR$/service-ribbon/src/main/resources/application-dev.yaml" />
-        <option value="$PROJECT_DIR$/service-ribbon/src/main/java/com/springcloud/serviceribbon/HelloService.java" />
         <option value="$PROJECT_DIR$/service-ribbon/src/main/java/com/springcloud/serviceribbon/HelloControler.java" />
         <option value="$PROJECT_DIR$/service-ribbon/src/main/resources/logback.xml" />
         <option value="$PROJECT_DIR$/serice-feign/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/serice-feign/src/main/resources/logback.xml" />
-        <option value="$PROJECT_DIR$/eureka/src/main/resources/application-dev.yaml" />
-        <option value="$PROJECT_DIR$/serice-feign/src/main/resources/application-dev.yaml" />
         <option value="$PROJECT_DIR$/serice-feign/src/main/java/com/springcloud/sericefeign/SericeFeignApplication.java" />
-        <option value="$PROJECT_DIR$/serice-feign/src/main/java/com/springcloud/sericefeign/SchedualServiceHi.java" />
         <option value="$PROJECT_DIR$/serice-feign/src/main/java/com/springcloud/sericefeign/HiController.java" />
+        <option value="$PROJECT_DIR$/service-ribbon/pom.xml" />
+        <option value="$PROJECT_DIR$/service-ribbon/src/main/java/com/springcloud/serviceribbon/ServiceRibbonApplication.java" />
+        <option value="$PROJECT_DIR$/service-ribbon/src/main/java/com/springcloud/serviceribbon/HelloService.java" />
+        <option value="$PROJECT_DIR$/serice-feign/src/main/resources/application-dev.yaml" />
+        <option value="$PROJECT_DIR$/serice-feign/src/main/java/com/springcloud/sericefeign/SchedualServiceHi.java" />
+        <option value="$PROJECT_DIR$/serice-feign/src/main/java/com/springcloud/sericefeign/SchedualServiceHiHystric.java" />
+        <option value="$PROJECT_DIR$/eureka/src/main/resources/application-dev.yaml" />
+        <option value="$PROJECT_DIR$/enreka-client/src/main/resources/application-dev.yaml" />
       </list>
     </option>
   </component>
@@ -169,7 +169,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558442868022" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558445687564" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/eureka-client/src/main/java/com/springcloud" />
@@ -276,7 +276,7 @@
       <workItem from="1558419180494" duration="2085000" />
       <workItem from="1558431061043" duration="76000" />
       <workItem from="1558431300745" duration="4636000" />
-      <workItem from="1558440770345" duration="2251000" />
+      <workItem from="1558440770345" duration="4927000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1558409569392</created>
@@ -299,11 +299,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558437993387</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="整合feign完毕">
+      <created>1558443170215</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1558443170215</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12833000" />
+    <option name="totallyTimeSpent" value="15509000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -356,7 +363,8 @@
     <MESSAGE value="init" />
     <MESSAGE value="加入ribbon" />
     <MESSAGE value="加入feign" />
-    <option name="LAST_COMMIT_MESSAGE" value="加入feign" />
+    <MESSAGE value="整合feign完毕" />
+    <option name="LAST_COMMIT_MESSAGE" value="整合feign完毕" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -390,13 +398,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/eureka/src/main/java/lombok.config">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eureka/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="26" selection-start-column="26" selection-end-column="26" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/eureka-client/src/main/resources/EurekaClientApplication.java" />
     <entry file="file://$PROJECT_DIR$/eureka-client/src/main/resources/banner.txt" />
@@ -475,13 +476,6 @@
     <entry file="file://$PROJECT_DIR$/service-ribbon/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/enreka-client/src/main/resources/application-dev.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/log/ribbon/2019-05-21/spring.log.2119">
       <provider selected="true" editor-type-id="LogFileEditorProvider">
         <state relative-caret-position="-3840" />
@@ -522,16 +516,6 @@
     <entry file="file://$PROJECT_DIR$/serice-feign/src/main/lombok.config">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/service-ribbon/src/main/java/com/springcloud/serviceribbon/ServiceRibbonApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="18" column="62" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/serice-feign/HELP.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -552,13 +536,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service-ribbon/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/serice-feign/src/main/resources/logback.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -573,47 +550,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eureka/src/main/resources/application-dev.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/serice-feign/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serice-feign/src/main/resources/application-dev.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/serice-feign/src/main/java/com/springcloud/sericefeign/SericeFeignApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/serice-feign/src/main/java/com/springcloud/sericefeign/SchedualServiceHi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="29" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-ribbon/src/main/java/com/springcloud/serviceribbon/HelloService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -624,6 +567,80 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-ribbon/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="50" column="21" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-ribbon/src/main/java/com/springcloud/serviceribbon/ServiceRibbonApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-ribbon/src/main/java/com/springcloud/serviceribbon/HelloService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#589#590#0" expanded="true" />
+            <element signature="e#638#639#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="26" selection-start-column="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serice-feign/src/main/java/com/springcloud/sericefeign/SchedualServiceHi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enreka-client/src/main/resources/application-dev.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka/src/main/resources/application-dev.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="8" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serice-feign/src/main/java/com/springcloud/sericefeign/SchedualServiceHiHystric.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serice-feign/src/main/resources/application-dev.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="21" column="9" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="9" />
         </state>
       </provider>
     </entry>
