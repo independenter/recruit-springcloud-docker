@@ -1,7 +1,7 @@
 <!-- configuration标签下的scan属性开启logback的自动扫描如果不设置 ，默认为false -->
 <configuration scan="true" scanPeriod="60 seconds" debug="false">
     <!-- 定义日志文件 输入位置 -->
-    <property name="log_dir" value="./log/server/" />
+    <property name="log_dir" value="./log/client/" />
     <!-- 日志最大的历史 30天 -->
     <property name="maxHistory" value="30"/>
     <!-- ConsoleAppender 控制台输出日志 -->

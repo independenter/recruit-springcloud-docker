@@ -1,0 +1,19 @@
+server:
+  port: 8001
+  servlet:
+    context-path: /
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    #register-with-eureka: false  #不要向注册中心注册自己
+    #fetch-registry: false  #禁止检索服务
+    serviceUrl.defaultZone: http://${eureka.instance.hostname}:8000/eureka/
+
+logging:
+  path: classpath:logback.xml
+
+spring:
+  application:
+    name: eurka-client
