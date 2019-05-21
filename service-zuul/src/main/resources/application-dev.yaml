@@ -1,0 +1,29 @@
+server:
+  port: 8100
+  servlet:
+    context-path: /
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    name: EUREKA-CLIENT
+    #register-with-eureka: false  #不要向注册中心注册自己
+    #fetch-registry: false  #禁止检索服务
+    serviceUrl.defaultZone: http://${eureka.instance.hostname}:8000/eureka/
+
+zuul:
+  routes:
+    api-a:
+      path: /api-a/**
+      serviceId: service-ribbon
+    api-b:
+      path: /api-b/**
+      serviceId: service-feign
+
+logging:
+  path: classpath:logback.xml
+
+spring:
+  application:
+    name: service-zuul
