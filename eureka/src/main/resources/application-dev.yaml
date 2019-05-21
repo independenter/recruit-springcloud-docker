@@ -1,0 +1,14 @@
+server:
+  port: 8881
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    #service-url: http://${eureka.instance.hostname}:${server.port}/eureka/
+    serviceUrl.defaultZone: http://localhost:8881/eureka/
+
+logging:
+  path: classpath:logback.xml

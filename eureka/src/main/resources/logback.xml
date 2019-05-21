@@ -1,0 +1,47 @@
+<!-- configuration标签下的scan属性开启logback的自动扫描如果不设置 ，默认为false -->
+<configuration scan="true" scanPeriod="60 seconds" debug="false">
+    <!-- 定义日志文件 输入位置 -->
+    <property name="log_dir" value="./log" />
+    <!-- 日志最大的历史 30天 -->
+    <property name="maxHistory" value="30"/>
+    <!-- ConsoleAppender 控制台输出日志 -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>INFO</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <!-- 对日志进行格式化 -->
+        <encoder>
+            <!--<pattern>%d{yyyy-MM-dd HH:mm:ss} %-5level -&#45;&#45; [%thread]  %logger :%msg%n</pattern>-->
+            <pattern>%d [%t] %-5p ${PID:-} %c{2} [%X{traceRootId}] :%m%n</pattern>
+            <!--<pattern>%d [%t] %-5p ${PID:-} %c{2} [%X{sessionId}] :%m%n</pattern>-->
+        </encoder>
+    </appender>
+
+    <appender name="SPRING" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- 按天回滚 daily -->
+            <fileNamePattern>${log_dir}/%d{yyyy-MM-dd}/spring.log.%d{ddHH}
+            </fileNamePattern>
+            <!-- 日志最大的历史 30天 -->
+            <maxHistory>${maxHistory}</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="com.ibatis.sqlmap.engine" level="DEBUG" />
+    <logger name="com.test.LogLevelController" level="DEBUG" additivity="true">
+        <appender-ref ref="STDOUT"/>
+    </logger>
+
+    <!-- root级别  INFO DEBUG -->
+    <root level="DEBUG">
+        <!-- 控制台输出 -->
+        <appender-ref ref="STDOUT" />
+        <!-- 文件输出 -->
+        <appender-ref ref="SPRING" />
+    </root>
+</configuration>
