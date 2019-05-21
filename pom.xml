@@ -10,7 +10,9 @@
 
     <modules>
         <module>eureka</module>
-        <module>service-hi</module>
+        <module>enreka-client</module>
+        <module>service-ribbon</module>
+        <module>serice-feign</module>
     </modules>
 
     <properties>
@@ -21,11 +23,11 @@
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-starter-test</artifactId>-->
+            <!--<scope>test</scope>-->
+        <!--</dependency>-->
     </dependencies>
 
     <dependencyManagement>
