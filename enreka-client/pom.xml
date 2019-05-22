@@ -89,7 +89,7 @@
     </dependencyManagement>
 
     <build>
-        <finalName>enreka-client</finalName>
+        <finalName>eureka-client</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

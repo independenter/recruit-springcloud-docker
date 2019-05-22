@@ -1,15 +1,17 @@
 server:
-  port: 8001
+  port: 8002
   servlet:
     context-path: /
 
 eureka:
   instance:
-    hostname: localhost
-    instance-id: ${server.port}
+    prefer-ip-address: true
+    hostname: 172.17.0.1
+#    hostname: localhost
+#    instance-id: ${server.port}
   client:
-    #register-with-eureka: false  #不要向注册中心注册自己
-    #fetch-registry: false  #禁止检索服务
+ #   register-with-eureka: true  #不要向注册中心注册自己
+#    fetch-registry: true  #禁止检索服务
     serviceUrl.defaultZone: http://${eureka.instance.hostname}:8000/eureka/
 
 logging:

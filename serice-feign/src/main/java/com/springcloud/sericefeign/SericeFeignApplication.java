@@ -17,7 +17,7 @@ public class SericeFeignApplication {
     public static void main(String[] args) {
         logger.info("ServiceFeignApplication Starting ... ");
         SpringApplication.run(SericeFeignApplication.class, args);
-        logger.info("ServiceFeignApplication Starting ... ");
+        logger.info("ServiceFeignApplication Started ... ");
     }
 
 }

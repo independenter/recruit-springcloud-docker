@@ -11,6 +11,8 @@
 # production
 /dist
 /log
+/.idea
+/src
 
 # misc
 .DS_Store

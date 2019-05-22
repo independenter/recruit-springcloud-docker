@@ -5,7 +5,10 @@ server:
 
 eureka:
   instance:
-    hostname: localhost
+    prefer-ip-address: true
+    hostname: 172.17.0.1
+#    hostname: 192.168.220.129
+#    hostname: localhost
   client:
     name: EUREKA-CLIENT
     #register-with-eureka: false  #不要向注册中心注册自己
