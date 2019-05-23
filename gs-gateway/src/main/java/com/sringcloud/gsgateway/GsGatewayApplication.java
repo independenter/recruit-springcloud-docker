@@ -23,13 +23,13 @@ public class GsGatewayApplication {
     }
 
     // tag::route-locator[]
-    ////curl --dump-header - --header 'Host: www.hystrix.com' http://localhost:8080/test
+    //curl --dump-header - --header 'Host: www.hystrix.com' http://localhost:8080/test
     @Bean
     public RouteLocator myRoutes(RouteLocatorBuilder builder, UriConfiguration uriConfiguration) {
         String httpUri = uriConfiguration.getHttpbin();
         return builder.routes()
                 .route(p -> p
-                        .path("/get")
+                        .path("/get1")
                         .filters(f -> f.addRequestHeader("Hello", "World"))
                         .uri(httpUri))
                 .route(p -> p
@@ -43,6 +43,31 @@ public class GsGatewayApplication {
     }
     // end::route-locator[]
 
+    //curl localhost:8030/customer/123
+    @Bean
+    public RouteLocator customerRouteLocator(RouteLocatorBuilder builder) {
+        // @formatter:off
+        return builder.routes()
+                .route(r -> r.path("/customer/**")
+                        .filters(f -> f.filter(new RequestTimeFilter())
+                                .addResponseHeader("X-Response-Default-Foo", "Default-Bar"))
+                        .uri("http://httpbin.org:80/get")
+                        .order(0)
+                        .id("customer_filter_router")
+                )
+                .build();
+        // @formatter:on
+    }
+
+    @Bean
+    public TokenFilter tokenFilter(){
+        return new TokenFilter();
+    }
+
+    @Bean
+    public RequestTimeGatewayFilterFactory elapsedGatewayFilterFactory() {
+        return new RequestTimeGatewayFilterFactory();
+    }
 
     // tag::fallback[]
     @RequestMapping("/fallback")
