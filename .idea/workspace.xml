@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ba2fe87-5bcb-41be-aa29-df06662e7d69" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gs-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gs-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gs-gateway/src/main/java/com/sringcloud/gsgateway/GsGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/gs-gateway/src/main/java/com/sringcloud/gsgateway/GsGatewayApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gs-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gs-gateway/src/main/resources/application.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -19,6 +19,7 @@
     <ignored path="$PROJECT_DIR$/service-lucy/target/" />
     <ignored path="$PROJECT_DIR$/service-turbine/target/" />
     <ignored path="$PROJECT_DIR$/gs-gateway/target/" />
+    <ignored path="$PROJECT_DIR$/service-gateway/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,73 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="69">
-                <caret line="48" column="66" selection-start-line="48" selection-start-column="66" selection-end-line="48" selection-end-column="66" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gs-gateway/src/main/resources/application.yml">
+        <entry file="file://$PROJECT_DIR$/service-gateway/src/main/resources/application-dev.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gs-gateway/src/main/java/com/sringcloud/gsgateway/GsGatewayApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="809">
-              <caret line="69" column="37" selection-start-line="69" selection-start-column="37" selection-end-line="69" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gs-gateway/src/main/java/com/sringcloud/gsgateway/RequestTimeGatewayFilterFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#730#731#0" expanded="true" />
-                <element signature="e#765#766#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gs-gateway/src/main/java/com/sringcloud/gsgateway/TokenFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1">
-              <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gs-gateway/src/main/java/com/sringcloud/gsgateway/HostAddrKeyResolver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="33" selection-start-column="33" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="49">
+              <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -131,6 +70,7 @@
       <find>log</find>
       <find>*.lua</find>
       <find>customer_filter_router</find>
+      <find>feign</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -142,6 +82,7 @@
     <dirStrings>
       <dir>D:\springboot\recruit\serice-feign</dir>
       <dir>C:\Users\Administrator\.m2\repository\org\springframework\cloud\spring-cloud-gateway-core\2.1.1.RELEASE\spring-cloud-gateway-core-2.1.1.RELEASE.jar!\org</dir>
+      <dir>D:\springboot\recruit</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -155,9 +96,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/serice-feign/src/main/resources/logback.xml" />
-        <option value="$PROJECT_DIR$/serice-feign/src/main/java/com/springcloud/sericefeign/HiController.java" />
-        <option value="$PROJECT_DIR$/service-ribbon/pom.xml" />
         <option value="$PROJECT_DIR$/serice-feign/src/main/java/com/springcloud/sericefeign/SchedualServiceHiHystric.java" />
         <option value="$PROJECT_DIR$/service-zuul/src/main/resources/logback.xml" />
         <option value="$PROJECT_DIR$/service-zuul/src/main/java/com/springcloud/servicezuul/ServiceZuulApplication.java" />
@@ -206,6 +144,9 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/gs-gateway/src/main/java/com/sringcloud/gsgateway/GsGatewayApplication.java" />
         <option value="$PROJECT_DIR$/gs-gateway/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/service-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/service-gateway/src/main/resources/logback.xml" />
+        <option value="$PROJECT_DIR$/service-gateway/src/main/resources/application-dev.yaml" />
       </list>
     </option>
   </component>
@@ -226,8 +167,8 @@
     <option name="skipTests" value="true" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="196" />
-    <option name="y" value="90" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
@@ -251,88 +192,28 @@
             <path>
               <item name="recruit" type="b2602c69:ProjectViewProjectNode" />
               <item name="recruit" type="462c0819:PsiDirectoryNode" />
-              <item name="gs-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="service-gateway" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="recruit" type="b2602c69:ProjectViewProjectNode" />
               <item name="recruit" type="462c0819:PsiDirectoryNode" />
-              <item name="gs-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="service-gateway" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="recruit" type="b2602c69:ProjectViewProjectNode" />
               <item name="recruit" type="462c0819:PsiDirectoryNode" />
-              <item name="gs-gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="recruit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="recruit" type="462c0819:PsiDirectoryNode" />
-              <item name="gs-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="service-gateway" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="recruit" type="b2602c69:ProjectViewProjectNode" />
               <item name="recruit" type="462c0819:PsiDirectoryNode" />
-              <item name="gs-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="service-gateway" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="recruit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="recruit" type="462c0819:PsiDirectoryNode" />
-              <item name="gs-gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="sringcloud" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="recruit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="recruit" type="462c0819:PsiDirectoryNode" />
-              <item name="gs-gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="sringcloud" type="462c0819:PsiDirectoryNode" />
-              <item name="gsgateway" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="recruit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="recruit" type="462c0819:PsiDirectoryNode" />
-              <item name="gs-gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="sringcloud" type="462c0819:PsiDirectoryNode" />
-              <item name="gsgateway" type="462c0819:PsiDirectoryNode" />
-              <item name="GsGatewayApplication.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="recruit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="recruit" type="462c0819:PsiDirectoryNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="recruit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="recruit" type="462c0819:PsiDirectoryNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
-              <item name="gs-gateway" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="recruit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="recruit" type="462c0819:PsiDirectoryNode" />
-              <item name="log" type="462c0819:PsiDirectoryNode" />
-              <item name="gs-gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="2019-05-23" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="recruit" type="b2602c69:ProjectViewProjectNode" />
@@ -354,7 +235,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558623537956" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558625112723" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/eureka-client/src/main/java/com/springcloud" />
@@ -371,11 +252,11 @@
       <recent name="D:\springboot\recruit\gs-gateway" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\springboot\recruit\service-gateway\src\main" />
       <recent name="D:\springboot\recruit\gs-gateway" />
       <recent name="D:\springboot\recruit\gs-gateway\src\main\resources" />
       <recent name="D:\springboot\recruit\gs-gateway\src\main\java" />
       <recent name="D:\springboot\recruit" />
-      <recent name="D:\springboot\recruit\service-turbine" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -390,7 +271,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.GsGatewayApplication">
+  <component name="RunManager" selected="Spring Boot.EnrekaClientApplication(1)">
     <configuration name="GsGatewayApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="gs-gateway" />
       <extension name="coverage">
@@ -465,6 +346,13 @@
     <configuration name="SericeFeignApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="serice-feign" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.springcloud.sericefeign.SericeFeignApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServiceGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="service-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.springcloud.servicegateway.ServiceGatewayApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -693,6 +581,7 @@
       <item itemvalue="Spring Boot.ServiceTurbineApplication" />
       <item itemvalue="Spring Boot.GsGatewayApplication" />
       <item itemvalue="JUnit.GsGatewayApplicationTests.contextLoads" />
+      <item itemvalue="Spring Boot.ServiceGatewayApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -719,7 +608,7 @@
       <workItem from="1558468711871" duration="3076000" />
       <workItem from="1558492105542" duration="17152000" />
       <workItem from="1558521028797" duration="611000" />
-      <workItem from="1558578802286" duration="33841000" />
+      <workItem from="1558578802286" duration="35387000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1558409569392</created>
@@ -819,7 +708,14 @@
       <option name="project" value="LOCAL" />
       <updated>1558616067121</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="令牌桶限流以及jmeter测试">
+      <created>1558623684144</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1558623684144</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -828,7 +724,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72436000" />
+    <option name="totallyTimeSpent" value="73982000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -854,7 +750,7 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.47790506" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.47790506" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.48281506" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -951,7 +847,8 @@
     <MESSAGE value="gateway" />
     <MESSAGE value="Gateway Predict篇,以及设置中国时间，代码和路由工厂顺序实践" />
     <MESSAGE value="Gateway Filter篇,设置tokern以及修改响应" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gateway Filter篇,设置tokern以及修改响应" />
+    <MESSAGE value="令牌桶限流以及jmeter测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="令牌桶限流以及jmeter测试" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -967,50 +864,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/recruit.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/hystrix/hystrix-core/1.5.18/hystrix-core-1.5.18.jar!/com/netflix/hystrix/metric/consumer/HystrixDashboardStream.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="68" column="61" selection-start-line="68" selection-start-column="40" selection-end-line="68" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/hystrix/hystrix-metrics-event-stream/1.5.18/hystrix-metrics-event-stream-1.5.18.jar!/com/netflix/hystrix/contrib/metrics/eventstream/HystrixMetricsStreamServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="27" column="60" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="60" />
-          <folding>
-            <element signature="e#1552#1553#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.5.RELEASE/spring-boot-2.1.5.RELEASE-sources.jar!/org/springframework/boot/web/servlet/ServletRegistrationBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-120">
-          <caret line="173" column="16" selection-start-line="173" selection-start-column="16" selection-end-line="173" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-lucy/src/main/java/com/springcloud/servicelucy/ServiceLucyApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="48" column="64" selection-start-line="48" selection-start-column="64" selection-end-line="48" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service-lucy/src/main/resources/application-dev.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/service-zuul/src/main/java/com/springcloud/servicezuul/MyFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -1312,8 +1165,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/gs-gateway/src/main/java/com/sringcloud/gsgateway/GsGatewayApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="809">
-          <caret line="69" column="37" selection-start-line="69" selection-start-column="37" selection-end-line="69" selection-end-column="37" />
+        <state relative-caret-position="-11">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1323,7 +1176,41 @@
     <entry file="file://$PROJECT_DIR$/gs-gateway/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <caret line="43" column="18" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-gateway/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-gateway/src/main/resources/banner.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-gateway/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-gateway/src/main/resources/logback.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serice-feign/src/main/resources/application-dev.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service-gateway/src/main/resources/application-dev.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="49">
+          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
         </state>
       </provider>
     </entry>

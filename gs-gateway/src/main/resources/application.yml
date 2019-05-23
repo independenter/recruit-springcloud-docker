@@ -2,7 +2,7 @@ server:
   port: 8030
 spring:
   profiles:
-    active: gateway_limiter
+    active: method_route
 #after_route,between_route,before_route,header_route,cookie_route,host_route,method_route,path_route,query_route,,
 #add_request_header_route,rewritepath_route
 logging:
@@ -133,7 +133,7 @@ spring:
     gateway:
       routes:
         - id: method_route
-          uri: http://example.org
+          uri: http://httpbin.org:80/get
           predicates:
             - Method=GET
   profiles: method_route

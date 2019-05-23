@@ -13,6 +13,7 @@
         <option value="$PROJECT_DIR$/service-lucy/pom.xml" />
         <option value="$PROJECT_DIR$/service-turbine/pom.xml" />
         <option value="$PROJECT_DIR$/gs-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/service-gateway/pom.xml" />
       </list>
     </option>
   </component>

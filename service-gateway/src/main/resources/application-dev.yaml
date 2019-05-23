@@ -1,0 +1,40 @@
+server:
+  port: 8050
+  servlet:
+    context-path: /
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    hostname: 172.17.0.1
+#    hostname: localhost
+#    instance-id: ${server.port}
+  client:
+ #   register-with-eureka: true  #不要向注册中心注册自己
+#    fetch-registry: true  #禁止检索服务
+#    serviceUrl.defaultZone: http://${eureka.instance.hostname}:8000/eureka/
+    serviceUrl.defaultZone: http://peer1:8000/eureka/
+
+logging:
+  path: classpath:logback.xml
+
+spring:
+  application:
+    name: service-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      #localhost:8050/eureka-client/hi?name=1323 不加routes
+      #localhost:8050/demo/hi?name=1323
+      routes:
+        - id: eureka-client
+          #lb://EUREKA-CLIENT即eureka-client服务的负载均衡地址
+          uri: lb://EUREKA-CLIENT
+          predicates:
+            - Path=/demo/**
+          filters:
+            # StripPrefix的filter 在转发之前将/demo去掉
+            - StripPrefix=1
