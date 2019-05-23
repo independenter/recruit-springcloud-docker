@@ -1,5 +1,5 @@
 ﻿server:
-  port: 8000
+  port: 7000
 #  servlet:
 #    context-path: /
 
@@ -10,14 +10,15 @@ eureka:
   client:
     register-with-eureka: false  #不要向注册中心注册自己
     fetch-registry: false  #禁止检索服务
-    registryFetchIntervalSeconds: 5
+#    registryFetchIntervalSeconds: 5
     #service-url: http://${eureka.instance.hostname}:${server.port}/eureka/
-    serviceUrl.defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+    serviceUrl.defaultZone: http://peer1:8000/eureka/
   server:
     enable-self-preservation: false  #自我保护
     eviction-interval-timer-in-ms: 10000
     UseReadOnlyResponseCache: false
-#  instance:
+  instance:
+    hostname: peer2
 #    prefer-ip-address: true
 
 
@@ -27,3 +28,4 @@ logging:
 spring:
   application:
     name: eureka-server
+spring.profile: peer2

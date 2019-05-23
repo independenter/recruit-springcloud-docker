@@ -8,6 +8,6 @@ ADD ./target/eureka-client.jar /home/docker/app/
 WORKDIR /home/docker/app
 
 #对外暴露的端口
-EXPOSE 8002
+EXPOSE 8004
 #程序启动脚本
-ENTRYPOINT ["java","-Dserver.port=8002","-jar","eureka-client.jar"]
+ENTRYPOINT ["java","-Dserver.port=8004","-jar","eureka-client.jar"]

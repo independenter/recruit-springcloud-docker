@@ -1,0 +1,32 @@
+﻿server:
+  port: 8000
+#  servlet:
+#    context-path: /
+
+eureka:
+  environment: dev
+  #instance:
+    #instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+  client:
+    register-with-eureka: false  #不要向注册中心注册自己
+    fetch-registry: false  #禁止检索服务
+#    registryFetchIntervalSeconds: 5
+    #service-url: http://${eureka.instance.hostname}:${server.port}/eureka/
+    serviceUrl.defaultZone: http://peer2:7000/eureka/
+  server:
+    enable-self-preservation: false  #自我保护
+    eviction-interval-timer-in-ms: 10000
+    UseReadOnlyResponseCache: false
+  instance:
+    hostname: peer1
+#    prefer-ip-address: true
+
+
+logging:
+  path: classpath:logback.xml
+
+spring:
+  application:
+    name: eureka-server
+
+spring.profile: peer1
