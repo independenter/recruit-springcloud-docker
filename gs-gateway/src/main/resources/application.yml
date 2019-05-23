@@ -2,13 +2,36 @@ server:
   port: 8030
 spring:
   profiles:
-    active: rewritepath_route
+    active: gateway_limiter
 #after_route,between_route,before_route,header_route,cookie_route,host_route,method_route,path_route,query_route,,
 #add_request_header_route,rewritepath_route
 logging:
   path: logback.xml
 
 ---
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: gateway_limiter
+          uri: http://httpbin.org:80/get
+          predicates:
+            - After=2017-01-20T17:42:47.789-07:00[America/Denver]
+          filters:
+            #- RewritePath=/foo/(?<segment>.*), /$\{segment}
+            - name: RequestRateLimiter
+              args:
+                #用于限流的键的解析器的 Bean 对象的名字。它使用 SpEL 表达式根据#{@beanName}从 Spring 容器中获取 Bean 对象。
+                key-resolver: '#{@ipKeyResolver}'
+                #牌桶每秒填充平均速率。
+                redis-rate-limiter.replenishRate: 1
+                #令牌桶总容量
+                redis-rate-limiter.burstCapacity: 3
+  redis:
+    host: localhost
+    port: 6379
+    database: 0
+  profiles: gateway_limiter
 ---
 #curl -i localhost:8030/foo/independenter
 spring:
