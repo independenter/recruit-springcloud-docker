@@ -16,6 +16,7 @@
         <module>service-zuul</module>
         <module>service-lucy</module>
         <module>service-turbine</module>
+        <module>gs-gateway</module>
     </modules>
 
     <properties>

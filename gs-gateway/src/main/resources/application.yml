@@ -1,0 +1,108 @@
+server:
+  port: 8030
+spring:
+  profiles:
+    active: query_route
+#after_route,between_route,before_route,header_route,cookie_route,host_route,method_route,path_route,query_route,,
+logging:
+  path: logback.xml
+---
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: after_route
+          uri: http://example.org
+          predicates:
+            - After=2017-01-20T17:42:47.789-07:00[America/Denver]
+  profiles: after_route
+---
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: between_route
+          uri: http://example.org
+          predicates:
+            - Between=2017-01-20T17:42:47.789-07:00[America/Denver], 2019-05-23T19:42:06+08:00[Asia/Shanghai]
+  profiles: between_route
+---
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: before_route
+          uri: http://example.org
+          predicates:
+            - Before=2019-05-23T17:42:47.789-07:00[America/Denver]
+  profiles: before_route
+---
+#curl -H 'X-Request-Id:1' localhost:8030/post
+#curl -i localhost:8030/post
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: header_route
+          uri: http://example.org
+          predicates:
+            - Header=X-Request-Id, \d+
+  profiles: header_route
+---
+#curl -H 'Cookie:name=forezp' localhost:8030
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: cookie_route
+          uri: http://example.org
+          predicates:
+            - Cookie=name, forezp
+  profiles: cookie_route
+---
+#curl -H 'Host:www.example.org' localhost:8030
+#curl -XPOST -H 'Host:www.example.org' localhost:8030
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: host_route
+          uri: http://example.org
+          predicates:
+            - Host=**.example.org
+            - Method=GET
+  profiles: host_route
+---
+#curl localhost:8030
+#curl -XPOST localhost:8030
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: method_route
+          uri: http://example.org
+          predicates:
+            - Method=GET
+  profiles: method_route
+---
+#curl localhost:8030/foo/dew
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: path_route
+          uri: http://example.org
+          predicates:
+            - Path=/foo/{segment}
+  profiles: path_route
+---
+#curl localhost:8030?foo=bar
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: query_route
+          uri: http://example.org
+          predicates:
+            - Query=foo, boo
+  profiles: query_route

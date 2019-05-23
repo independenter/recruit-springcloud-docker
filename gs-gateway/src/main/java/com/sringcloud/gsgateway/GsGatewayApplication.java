@@ -23,7 +23,7 @@ public class GsGatewayApplication {
     }
 
     // tag::route-locator[]
-    ////curl --dump-header - --header 'Host: www.hystrix.com' http://localhost:8080/delay/3
+    ////curl --dump-header - --header 'Host: www.hystrix.com' http://localhost:8080/test
     @Bean
     public RouteLocator myRoutes(RouteLocatorBuilder builder, UriConfiguration uriConfiguration) {
         String httpUri = uriConfiguration.getHttpbin();
