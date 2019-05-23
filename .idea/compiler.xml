@@ -10,6 +10,7 @@
         <module name="eureka" />
         <module name="recruit" />
         <module name="serice-feign" />
+        <module name="service-lucy" />
         <module name="service-ribbon" />
         <module name="service-zuul" />
       </profile>
@@ -24,6 +25,7 @@
       <module name="eureka" options="-parameters" />
       <module name="eureka-client" options="-parameters" />
       <module name="serice-feign" options="-parameters" />
+      <module name="service-lucy" options="-parameters" />
       <module name="service-ribbon" options="-parameters" />
       <module name="service-zuul" options="-parameters" />
     </option>
