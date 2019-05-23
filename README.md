@@ -12,4 +12,6 @@ RibbonLoadBalancerClient
 网关服务zuul本来就有，不用额外配置
 使用feign调用的服务，需要打开hystrisfeign:hystrix:enabled: true
 
-4.调用HystrixCommand方法，才会处理爱hystrix.stream
+4.调用HystrixCommand方法，才会处理有hystrix.stream,映射到HystrixMetricsStreamServlet
+
+5.service-turbine靠com.netflix.turbine.monitor.instance.InstanceMonitor解析hystrix.stream的返回

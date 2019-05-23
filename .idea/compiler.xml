@@ -12,6 +12,7 @@
         <module name="serice-feign" />
         <module name="service-lucy" />
         <module name="service-ribbon" />
+        <module name="service-turbine" />
         <module name="service-zuul" />
       </profile>
     </annotationProcessing>
@@ -27,6 +28,7 @@
       <module name="serice-feign" options="-parameters" />
       <module name="service-lucy" options="-parameters" />
       <module name="service-ribbon" options="-parameters" />
+      <module name="service-turbine" options="-parameters" />
       <module name="service-zuul" options="-parameters" />
     </option>
   </component>

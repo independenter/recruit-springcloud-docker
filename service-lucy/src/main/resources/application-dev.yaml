@@ -1,0 +1,27 @@
+server:
+  port: 8003
+  servlet:
+    context-path: /
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    hostname: 172.17.0.1
+#    hostname: localhost
+#    instance-id: ${server.port}
+  client:
+ #   register-with-eureka: true  #不要向注册中心注册自己
+#    fetch-registry: true  #禁止检索服务
+#    serviceUrl.defaultZone: http://${eureka.instance.hostname}:8000/eureka/
+    serviceUrl.defaultZone: http://peer1:8000/eureka/
+
+logging:
+  path: classpath:logback.xml
+
+spring:
+  application:
+    name: service-lucy
+
+#feign:
+#  hystrix:
+#    enabled: true

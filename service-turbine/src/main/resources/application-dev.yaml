@@ -1,0 +1,42 @@
+server:
+  port: 8005
+  servlet:
+    context-path: /
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    hostname: 172.17.0.1
+#    hostname: localhost
+#    instance-id: ${server.port}
+  client:
+ #   register-with-eureka: true  #不要向注册中心注册自己
+#    fetch-registry: true  #禁止检索服务
+#    serviceUrl.defaultZone: http://${eureka.instance.hostname}:8000/eureka/
+    serviceUrl.defaultZone: http://peer1:8000/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+      cors:
+        allowed-origins: "*"
+        allowed-methods: "*"
+
+logging:
+  path: classpath:logback.xml
+
+spring:
+  application:
+    name: service-turbine
+
+
+turbine:
+  app-config: eureka-client,service-lucy
+  aggregator:
+    clusterConfig: default
+  clusterNameExpression: new String("default")
+  combine-host: true
+  instanceUrlSuffix:
+    default: actuator/hystrix.stream
