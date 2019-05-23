@@ -13,6 +13,9 @@
         <module>enreka-client</module>
         <module>service-ribbon</module>
         <module>serice-feign</module>
+        <module>service-zuul</module>
+        <module>service-lucy</module>
+        <module>service-turbine</module>
     </modules>
 
     <properties>
